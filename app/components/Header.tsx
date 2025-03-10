@@ -12,8 +12,8 @@ const Header = () => {
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <a href="/" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
               <a href="/nosotros" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
-              <a href="#services" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
-              <a href="#impact" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Impacto</a>
+              <a href="/servicio" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+              <a href="/impacto" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Impacto</a>
               <a href="/contacto" className="text-white hover:text-green-100 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
             </div>
           </div>

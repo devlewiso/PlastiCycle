@@ -27,9 +27,9 @@ export default function Nosotros() {
               <div className="w-full h-64 md:h-96 bg-green-400 rounded-lg shadow-xl">
                 {/* Marcador de imagen para la sección hero */}
                 <div className="w-full h-full flex items-center justify-center text-white text-lg">
-                  <img
-                    src="/api/placeholder/500/400"
-                    alt="Sobre Nosotros"
+                <img
+                    src="/img/banner2.png" // Ruta de la imagen
+                    alt="Proceso de Reciclaje"
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
