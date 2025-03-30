@@ -15,7 +15,7 @@ export default function Servicios() {
     individuos: [
       {
         id: 1,
-        icon: <FaRecycle className="text-4xl text-green-500 mb-4" />,
+        icon: <FaRecycle className="text-4xl text-black mb-4" />,
         title: 'Recolección Domiciliaria',
         description: 'Recogemos tus plásticos directamente en tu hogar. Programa una recolección a través de nuestra aplicación y nosotros nos encargamos del resto.',
         features: ['Programación flexible', 'Seguimiento en tiempo real', 'Acumulación de EcoPuntos', 'Sin costo adicional']
@@ -47,7 +47,7 @@ export default function Servicios() {
     comunidades: [
       {
         id: 5,
-        icon: <FaUserFriends className="text-4xl text-green-500 mb-4" />,
+        icon: <FaUserFriends className="text-4xl text-black mb-4" />,
         title: 'Programas Comunitarios',
         description: 'Iniciativas para barrios y comunidades que desean organizarse para generar un impacto positivo en su entorno a través del reciclaje.',
         features: ['Contenedores comunitarios', 'Charlas de concientización', 'Campañas de recolección', 'Premios para comunidades']
