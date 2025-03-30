@@ -148,7 +148,7 @@ export default function Contacto() {
               Juntos por un Guatemala más verde. ¿Tienes preguntas sobre nuestros servicios de reciclaje? Estamos aquí para ayudarte.
             </p>
             <div className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-white hover:bg-green-50 shadow-sm">
-              Llámanos: <span className="font-bold ml-2">+502 2345 6789</span>
+              Llámanos: <span className="font-bold ml-2">devlewiso@gmail.com</span>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function Contacto() {
                   </div>
                   <div className="ml-3">
                     <p className="text-sm font-medium text-gray-900">Teléfono</p>
-                    <p className="text-sm text-gray-600">+502 2345 6789</p>
+                    <p className="text-sm text-gray-600">devlewiso@gmail.com</p>
                   </div>
                 </div>
                 
@@ -191,14 +191,14 @@ export default function Contacto() {
                   </div>
                   <div className="ml-3">
                     <p className="text-sm font-medium text-gray-900">Dirección</p>
-                    <p className="text-sm text-gray-600">Zona 10, Ciudad de Guatemala<br />Guatemala, C.A.</p>
+                    <p className="text-sm text-gray-600">, Ciudad de Guatemala<br />Guatemala, C.A.</p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-6">
                 <h3 className="text-lg font-medium text-gray-900 mb-3">Horario de Atención</h3>
-                <div className="grid grid-cols-2 gap-2 text-sm">
+                <div className="grid grid-cols-2 gap-2 text-sm text-black">
                   <div>Lunes - Viernes:</div>
                   <div>8:00 - 17:00</div>
                   <div>Sábados:</div>
@@ -214,7 +214,7 @@ export default function Contacto() {
               <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
                 <p className="text-gray-500 text-center px-4">
                   Ubicación Plasticycle Guatemala<br />
-                  Zona 10, Ciudad de Guatemala
+                  Ciudad de Guatemala
                 </p>
               </div>
             </div>
@@ -227,7 +227,7 @@ export default function Contacto() {
                   <div className="text-green-600 font-bold">1</div>
                 </div>
                 <div>
-                  <p className="font-medium">+500 toneladas</p>
+                  <p className="font-bold text-black">+500 toneladas</p>
                   <p className="text-sm text-gray-600">Plástico reciclado en 2024</p>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function Contacto() {
                   <div className="text-green-600 font-bold">2</div>
                 </div>
                 <div>
-                  <p className="font-medium">15 comunidades</p>
+                  <p className="font-bold text-black">15 comunidades</p>
                   <p className="text-sm text-gray-600">Participantes en Guatemala</p>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export default function Contacto() {
                   <div className="text-green-600 font-bold">3</div>
                 </div>
                 <div>
-                  <p className="font-medium">100+ empleos</p>
+                  <p className="font-bold text-black">100+ empleos</p>
                   <p className="text-sm text-gray-600">Generados en la economía local</p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function Contacto() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Nombre */}
                   <div>
-                    <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="nombre" className="block text-sm font-medium text-black">
                       Nombre completo <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -283,7 +283,7 @@ export default function Contacto() {
                       value={formData.nombre}
                       onChange={handleChange}
                       placeholder="Tu nombre"
-                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm ${
+                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm placeholder:text-gray-700 text-black ${
                         errors.nombre ? 'border-red-300 focus:border-red-500 focus:ring-red-500' : 'border-gray-300'
                       }`}
                     />
@@ -292,7 +292,7 @@ export default function Contacto() {
                   
                   {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="block text-sm font-medium text-black">
                       Correo Electrónico <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -302,7 +302,7 @@ export default function Contacto() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="tu@ejemplo.com"
-                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm ${
+                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm placeholder:text-gray-700 text-black ${
                         errors.email ? 'border-red-300 focus:border-red-500 focus:ring-red-500' : 'border-gray-300'
                       }`}
                     />
@@ -313,7 +313,7 @@ export default function Contacto() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Teléfono */}
                   <div>
-                    <label htmlFor="telefono" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="telefono" className="block text-sm font-medium text-black">
                       Teléfono (opcional)
                     </label>
                     <input
@@ -323,13 +323,13 @@ export default function Contacto() {
                       value={formData.telefono}
                       onChange={handleChange}
                       placeholder="+502 XXXX XXXX"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm placeholder:text-gray-700 text-black"
                     />
                   </div>
                   
                   {/* Asunto */}
                   <div>
-                    <label htmlFor="asunto" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="asunto" className="block text-sm font-medium text-black">
                       Asunto <span className="text-red-500">*</span>
                     </label>
                     <select
@@ -337,7 +337,7 @@ export default function Contacto() {
                       name="asunto"
                       value={formData.asunto}
                       onChange={handleChange}
-                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm ${
+                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm placeholder:text-gray-700 text-black ${
                         errors.asunto ? 'border-red-300 focus:border-red-500 focus:ring-red-500' : 'border-gray-300'
                       }`}
                     >
@@ -356,7 +356,7 @@ export default function Contacto() {
                 
                 {/* Mensaje */}
                 <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="mensaje" className="block text-sm font-medium text-black">
                     Mensaje <span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -366,7 +366,7 @@ export default function Contacto() {
                     value={formData.mensaje}
                     onChange={handleChange}
                     placeholder="Escribe tu mensaje aquí..."
-                    className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm ${
+                    className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm placeholder:text-gray-700 text-black ${
                       errors.mensaje ? 'border-red-300 focus:border-red-500 focus:ring-red-500' : 'border-gray-300'
                     }`}
                   ></textarea>
@@ -385,7 +385,7 @@ export default function Contacto() {
                     />
                   </div>
                   <div className="ml-3 text-sm">
-                    <label htmlFor="privacidad" className="font-medium text-gray-700">
+                    <label htmlFor="privacidad" className="font-medium text-gray-900">
                       Acepto la <a href="#" className="text-green-600 hover:text-green-500">política de privacidad</a>
                     </label>
                     <p className="text-gray-500">Tus datos serán tratados según nuestra política de privacidad.</p>
