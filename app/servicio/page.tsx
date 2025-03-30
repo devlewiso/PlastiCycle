@@ -168,7 +168,7 @@ export default function Servicios() {
                   <h3 className="text-xl font-medium text-gray-800">{faq.question}</h3>
                   <div>{openFaq === faq.id ? <FaChevronUp /> : <FaChevronDown />}</div>
                 </div>
-                {openFaq === faq.id && <p className="mt-4 text-lg text-gray-600">{faq.answer}</p>}
+                {openFaq === faq.id && <p className="mt-4 text-lg text-black">{faq.answer}</p>}
               </div>
             ))}
           </div>
