@@ -55,7 +55,7 @@ export default function Nosotros() {
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                src="/api/placeholder/300/300"
+                src="https://placehold.co/300x300"
                 alt="Miembro 1"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
@@ -64,7 +64,7 @@ export default function Nosotros() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                src="/api/placeholder/300/300"
+                src="https://placehold.co/300x300"
                 alt="Miembro 2"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
@@ -73,7 +73,7 @@ export default function Nosotros() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                src="/api/placeholder/300/300"
+                src="https://placehold.co/300x300"
                 alt="Miembro 3"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />

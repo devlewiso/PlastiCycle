@@ -1,5 +1,5 @@
 import React from 'react';
-import { BiTargetLock, BiCheckCircle } from 'react-icons/bi'; // Iconos importados
+import { BiTargetLock, BiCheckCircle, BiGroup } from 'react-icons/bi'; // Iconos importados
 
 const Services = () => {
   return (
@@ -17,7 +17,7 @@ const Services = () => {
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Servicio 1: Reciclaje Empresarial */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <BiTargetLock className="w-10 h-10 text-green-600 mb-4" />
+            <BiTargetLock className="w-10 h-10 text-green-600 mb-4 flex justify-center" />
             <h3 className="text-xl font-semibold text-gray-800">Reciclaje Empresarial</h3>
             <p className="mt-2 text-gray-600">
               Proveemos soluciones personalizadas para empresas, ayudándolas a reducir su huella ecológica a través del reciclaje de plásticos y otros materiales.
@@ -26,10 +26,19 @@ const Services = () => {
 
           {/* Servicio 2: Reciclaje Doméstico */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <BiCheckCircle className="w-10 h-10 text-green-600 mb-4" />
+            <BiCheckCircle className="w-10 h-10 text-green-600 mb-4 flex justify-center" />
             <h3 className="text-xl font-semibold text-gray-800">Reciclaje Doméstico</h3>
             <p className="mt-2 text-gray-600">
               Ofrecemos soluciones de reciclaje para hogares, ayudando a las familias a gestionar sus residuos de manera responsable y sostenible.
+            </p>
+          </div>
+
+          {/* Servicio 3: Reciclaje Comunitario */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <BiGroup className="w-10 h-10 text-green-600 mb-4 flex justify-center" />
+            <h3 className="text-xl font-semibold text-gray-800">Reciclaje Comunitario</h3>
+            <p className="mt-2 text-gray-600">
+              Implementamos programas de reciclaje para comunidades, fomentando la participación colectiva en el cuidado del medio ambiente.
             </p>
           </div>
         </div>

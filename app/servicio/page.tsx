@@ -16,15 +16,15 @@ export default function Servicios() {
       {
         id: 1,
         icon: <FaRecycle className="text-4xl text-black mb-4" />,
-        title: 'Recolección Domiciliaria',
-        description: 'Recogemos tus plásticos directamente en tu hogar. Programa una recolección a través de nuestra aplicación y nosotros nos encargamos del resto.',
+        title: <span style={{ fontWeight: 'bold', color: 'black' }}>Recolección Domiciliaria</span>,
+        description: <span style={{ fontWeight: 'bold', color: 'black' }}>Recogemos tus plásticos directamente en tu hogar. Programa una recolección a través de nuestra aplicación y nosotros nos encargamos del resto.</span>,
         features: ['Programación flexible', 'Seguimiento en tiempo real', 'Acumulación de EcoPuntos', 'Sin costo adicional']
       },
       {
         id: 2,
         icon: <FaTruck className="text-4xl text-green-500 mb-4" />,
-        title: 'Puntos de Entrega',
-        description: 'Disponemos de puntos estratégicos en la ciudad donde puedes depositar tus plásticos reciclables cuando sea conveniente para ti.',
+        title: <span style={{ fontWeight: 'bold', color: 'black' }}>Puntos de Entrega</span>,
+        description: <span style={{ fontWeight: 'bold', color: 'black' }}>Disponemos de puntos estratégicos en la ciudad donde puedes depositar tus plásticos reciclables cuando sea conveniente para ti.</span>,
         features: ['Ubicaciones accesibles', 'Disponibles 24/7', 'Verificación inmediata', 'Código QR para registro']
       }
     ],
@@ -32,15 +32,15 @@ export default function Servicios() {
       {
         id: 3,
         icon: <FaBuilding className="text-4xl text-green-500 mb-4" />,
-        title: 'Gestión Corporativa de Residuos',
-        description: 'Soluciones a medida para empresas que buscan una gestión responsable de sus residuos plásticos, cumpliendo con normativas ambientales.',
+        title: <span style={{ fontWeight: 'bold', color: 'black' }}>Gestión Corporativa de Residuos</span>,
+        description: <span style={{ fontWeight: 'bold', color: 'black' }}>Soluciones a medida para empresas que buscan una gestión responsable de sus residuos plásticos, cumpliendo con normativas ambientales.</span>,
         features: ['Evaluación inicial gratuita', 'Planes personalizados', 'Informes de impacto ambiental', 'Certificación de economía circular']
       },
       {
         id: 4,
         icon: <MdBusinessCenter className="text-4xl text-green-500 mb-4" />,
-        title: 'Consultoría en Sostenibilidad',
-        description: 'Asesoramiento especializado para implementar prácticas sostenibles en tu empresa, optimizando recursos y reduciendo la huella ambiental.',
+        title: <span style={{ fontWeight: 'bold', color: 'black' }}>Consultoría en Sostenibilidad</span>,
+        description: <span style={{ fontWeight: 'bold', color: 'black' }}>Asesoramiento especializado para implementar prácticas sostenibles en tu empresa, optimizando recursos y reduciendo la huella ambiental.</span>,
         features: ['Análisis de procesos', 'Estrategias de reducción', 'Capacitación de personal', 'Seguimiento continuo']
       }
     ],
@@ -48,15 +48,15 @@ export default function Servicios() {
       {
         id: 5,
         icon: <FaUserFriends className="text-4xl text-black mb-4" />,
-        title: 'Programas Comunitarios',
-        description: 'Iniciativas para barrios y comunidades que desean organizarse para generar un impacto positivo en su entorno a través del reciclaje.',
+        title: <span style={{ fontWeight: 'bold', color: 'black' }}>Programas Comunitarios</span>,
+        description: <span style={{ fontWeight: 'bold', color: 'black' }}>Iniciativas para barrios y comunidades que desean organizarse para generar un impacto positivo en su entorno a través del reciclaje.</span>,
         features: ['Contenedores comunitarios', 'Charlas de concientización', 'Campañas de recolección', 'Premios para comunidades']
       },
       {
         id: 6,
         icon: <MdSchool className="text-4xl text-green-500 mb-4" />,
-        title: 'Educación Ambiental',
-        description: 'Talleres y actividades educativas para escuelas, universidades y grupos comunitarios sobre la importancia del reciclaje y la economía circular.',
+        title: <span style={{ fontWeight: 'bold', color: 'black' }}>Educación Ambiental</span>,
+        description: <span style={{ fontWeight: 'bold', color: 'black' }}>Talleres y actividades educativas para escuelas, universidades y grupos comunitarios sobre la importancia del reciclaje y la economía circular.</span>,
         features: ['Material didáctico', 'Talleres prácticos', 'Visitas a plantas', 'Proyectos escolares']
       }
     ]
@@ -160,15 +160,15 @@ export default function Servicios() {
       {/* FAQ Section */}
       <div className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold text-center">Preguntas Frecuentes</h2>
+          <h2 className="text-3xl font-semibold text-center"><span style={{ fontWeight: 'bold', color: 'black' }}>Preguntas Frecuentes</span></h2>
           <div className="mt-6 space-y-6">
             {faqsData.map((faq) => (
               <div key={faq.id} className="border-b pb-6">
-                <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleFaq(faq.id)}>
-                  <h3 className="text-xl font-medium text-gray-800">{faq.question}</h3>
-                  <div>{openFaq === faq.id ? <FaChevronUp /> : <FaChevronDown />}</div>
+                <div className="flex justify-center items-center cursor-pointer" onClick={() => toggleFaq(faq.id)}>
+                  <h3 className="text-xl font-medium text-gray-800 text-center">{faq.question}</h3>
+                  <div className="ml-4">{openFaq === faq.id ? <FaChevronUp /> : <FaChevronDown />}</div>
                 </div>
-                {openFaq === faq.id && <p className="mt-4 text-lg text-black">{faq.answer}</p>}
+                {openFaq === faq.id && <p className="mt-4 text-lg text-black text-center">{faq.answer}</p>}
               </div>
             ))}
           </div>
